@@ -4,6 +4,8 @@ from django.db import models
 
 from django.contrib.localflavor.br import br_states
 
+UFS = dict([(sigla, nome) for sigla, nome in br_states.STATE_CHOICES])
+
 REGIOES = [
     (1, u'Norte'),
     (2, u'Nordeste'),
@@ -11,8 +13,6 @@ REGIOES = [
     (4, u'Sul'),
     (5, u'Centro-Oeste'),
 ]
-
-UFS = dict([(sigla, nome) for sigla, nome in br_states.STATE_CHOICES])
 
 class Municipio(models.Model):
     uf = models.CharField(max_length=2, db_index=True,
