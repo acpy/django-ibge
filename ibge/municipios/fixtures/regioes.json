@@ -1,0 +1,1372 @@
+[
+  {
+    "pk": 1, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Vale do Acre", 
+      "uf": "AC", 
+      "nome_ascii": "Vale do Acre"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Vale do Juru\u00e1", 
+      "uf": "AC", 
+      "nome_ascii": "Vale do Jurua"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Centro Amazonense", 
+      "uf": "AM", 
+      "nome_ascii": "Centro Amazonense"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Norte Amazonense", 
+      "uf": "AM", 
+      "nome_ascii": "Norte Amazonense"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sudoeste Amazonense", 
+      "uf": "AM", 
+      "nome_ascii": "Sudoeste Amazonense"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sul Amazonense", 
+      "uf": "AM", 
+      "nome_ascii": "Sul Amazonense"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Norte do Amap\u00e1", 
+      "uf": "AP", 
+      "nome_ascii": "Norte do Amapa"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sul do Amap\u00e1", 
+      "uf": "AP", 
+      "nome_ascii": "Sul do Amapa"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Baixo Amazonas", 
+      "uf": "PA", 
+      "nome_ascii": "Baixo Amazonas"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Maraj\u00f3", 
+      "uf": "PA", 
+      "nome_ascii": "Marajo"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Metropolitana de Bel\u00e9m", 
+      "uf": "PA", 
+      "nome_ascii": "Metropolitana de Belem"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Nordeste Paraense", 
+      "uf": "PA", 
+      "nome_ascii": "Nordeste Paraense"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sudeste Paraense", 
+      "uf": "PA", 
+      "nome_ascii": "Sudeste Paraense"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sudoeste Paraense", 
+      "uf": "PA", 
+      "nome_ascii": "Sudoeste Paraense"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Leste Rondoniense", 
+      "uf": "RO", 
+      "nome_ascii": "Leste Rondoniense"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Madeira-Guapor\u00e9", 
+      "uf": "RO", 
+      "nome_ascii": "Madeira-Guapore"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Norte de Roraima", 
+      "uf": "RR", 
+      "nome_ascii": "Norte de Roraima"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Sul de Roraima", 
+      "uf": "RR", 
+      "nome_ascii": "Sul de Roraima"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Ocidental do Tocantins", 
+      "uf": "TO", 
+      "nome_ascii": "Ocidental do Tocantins"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "1", 
+      "nome": "Oriental do Tocantins", 
+      "uf": "TO", 
+      "nome_ascii": "Oriental do Tocantins"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Agreste Alagoano", 
+      "uf": "AL", 
+      "nome_ascii": "Agreste Alagoano"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Leste Alagoano", 
+      "uf": "AL", 
+      "nome_ascii": "Leste Alagoano"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sert\u00e3o Alagoano", 
+      "uf": "AL", 
+      "nome_ascii": "Sertao Alagoano"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Centro Norte Baiano", 
+      "uf": "BA", 
+      "nome_ascii": "Centro Norte Baiano"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Centro Sul Baiano", 
+      "uf": "BA", 
+      "nome_ascii": "Centro Sul Baiano"
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Extremo Oeste Baiano", 
+      "uf": "BA", 
+      "nome_ascii": "Extremo Oeste Baiano"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Metropolitana de Salvador", 
+      "uf": "BA", 
+      "nome_ascii": "Metropolitana de Salvador"
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Nordeste Baiano", 
+      "uf": "BA", 
+      "nome_ascii": "Nordeste Baiano"
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sul Baiano", 
+      "uf": "BA", 
+      "nome_ascii": "Sul Baiano"
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Vale S\u00e3o-Franciscano da Bahia", 
+      "uf": "BA", 
+      "nome_ascii": "Vale Sao-Franciscano da Bahia"
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Centro-Sul Cearense", 
+      "uf": "CE", 
+      "nome_ascii": "Centro-Sul Cearense"
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Jaguaribe", 
+      "uf": "CE", 
+      "nome_ascii": "Jaguaribe"
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Metropolitana de Fortaleza", 
+      "uf": "CE", 
+      "nome_ascii": "Metropolitana de Fortaleza"
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Noroeste Cearense", 
+      "uf": "CE", 
+      "nome_ascii": "Noroeste Cearense"
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Norte Cearense", 
+      "uf": "CE", 
+      "nome_ascii": "Norte Cearense"
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sert\u00f5es Cearenses", 
+      "uf": "CE", 
+      "nome_ascii": "Sertoes Cearenses"
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sul Cearense", 
+      "uf": "CE", 
+      "nome_ascii": "Sul Cearense"
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Centro Maranhense", 
+      "uf": "MA", 
+      "nome_ascii": "Centro Maranhense"
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Leste Maranhense", 
+      "uf": "MA", 
+      "nome_ascii": "Leste Maranhense"
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Norte Maranhense", 
+      "uf": "MA", 
+      "nome_ascii": "Norte Maranhense"
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Oeste Maranhense", 
+      "uf": "MA", 
+      "nome_ascii": "Oeste Maranhense"
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sul Maranhense", 
+      "uf": "MA", 
+      "nome_ascii": "Sul Maranhense"
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Agreste Paraibano", 
+      "uf": "PB", 
+      "nome_ascii": "Agreste Paraibano"
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Borborema", 
+      "uf": "PB", 
+      "nome_ascii": "Borborema"
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Mata Paraibana", 
+      "uf": "PB", 
+      "nome_ascii": "Mata Paraibana"
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sert\u00e3o Paraibano", 
+      "uf": "PB", 
+      "nome_ascii": "Sertao Paraibano"
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Agreste Pernambucano", 
+      "uf": "PE", 
+      "nome_ascii": "Agreste Pernambucano"
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Mata Pernambucana", 
+      "uf": "PE", 
+      "nome_ascii": "Mata Pernambucana"
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Metropolitana de Recife", 
+      "uf": "PE", 
+      "nome_ascii": "Metropolitana de Recife"
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sert\u00e3o Pernambucano", 
+      "uf": "PE", 
+      "nome_ascii": "Sertao Pernambucano"
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "S\u00e3o Francisco Pernambucano", 
+      "uf": "PE", 
+      "nome_ascii": "Sao Francisco Pernambucano"
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Centro-Norte Piauiense", 
+      "uf": "PI", 
+      "nome_ascii": "Centro-Norte Piauiense"
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Norte Piauiense", 
+      "uf": "PI", 
+      "nome_ascii": "Norte Piauiense"
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sudeste Piauiense", 
+      "uf": "PI", 
+      "nome_ascii": "Sudeste Piauiense"
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sudoeste Piauiense", 
+      "uf": "PI", 
+      "nome_ascii": "Sudoeste Piauiense"
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Agreste Potiguar", 
+      "uf": "RN", 
+      "nome_ascii": "Agreste Potiguar"
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Central Potiguar", 
+      "uf": "RN", 
+      "nome_ascii": "Central Potiguar"
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Leste Potiguar", 
+      "uf": "RN", 
+      "nome_ascii": "Leste Potiguar"
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Oeste Potiguar", 
+      "uf": "RN", 
+      "nome_ascii": "Oeste Potiguar"
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Agreste Sergipano", 
+      "uf": "SE", 
+      "nome_ascii": "Agreste Sergipano"
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Leste Sergipano", 
+      "uf": "SE", 
+      "nome_ascii": "Leste Sergipano"
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "2", 
+      "nome": "Sert\u00e3o Sergipano", 
+      "uf": "SE", 
+      "nome_ascii": "Sertao Sergipano"
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Central Esp\u00edrito-Santense", 
+      "uf": "ES", 
+      "nome_ascii": "Central Espirito-Santense"
+    }
+  }, 
+  {
+    "pk": 64, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Litoral Norte Esp\u00edrito-Santense", 
+      "uf": "ES", 
+      "nome_ascii": "Litoral Norte Espirito-Santense"
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Noroeste Esp\u00edrito-Santense", 
+      "uf": "ES", 
+      "nome_ascii": "Noroeste Espirito-Santense"
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Sul Esp\u00edrito-Santense", 
+      "uf": "ES", 
+      "nome_ascii": "Sul Espirito-Santense"
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Campo das Vertentes", 
+      "uf": "MG", 
+      "nome_ascii": "Campo das Vertentes"
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Central Mineira", 
+      "uf": "MG", 
+      "nome_ascii": "Central Mineira"
+    }
+  }, 
+  {
+    "pk": 69, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Jequitinhonha", 
+      "uf": "MG", 
+      "nome_ascii": "Jequitinhonha"
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Metropolitana de Belo Horizonte", 
+      "uf": "MG", 
+      "nome_ascii": "Metropolitana de Belo Horizonte"
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Noroeste de Minas", 
+      "uf": "MG", 
+      "nome_ascii": "Noroeste de Minas"
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Norte de Minas", 
+      "uf": "MG", 
+      "nome_ascii": "Norte de Minas"
+    }
+  }, 
+  {
+    "pk": 73, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Oeste de Minas", 
+      "uf": "MG", 
+      "nome_ascii": "Oeste de Minas"
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Sul/Sudoeste de Minas", 
+      "uf": "MG", 
+      "nome_ascii": "Sul/Sudoeste de Minas"
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Tri\u00e2ngulo Mineiro/Alto Parana\u00edba", 
+      "uf": "MG", 
+      "nome_ascii": "Triangulo Mineiro/Alto Paranaiba"
+    }
+  }, 
+  {
+    "pk": 76, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Vale do Mucuri", 
+      "uf": "MG", 
+      "nome_ascii": "Vale do Mucuri"
+    }
+  }, 
+  {
+    "pk": 77, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Vale do Rio Doce", 
+      "uf": "MG", 
+      "nome_ascii": "Vale do Rio Doce"
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Zona da Mata", 
+      "uf": "MG", 
+      "nome_ascii": "Zona da Mata"
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Baixadas", 
+      "uf": "RJ", 
+      "nome_ascii": "Baixadas"
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Centro Fluminense", 
+      "uf": "RJ", 
+      "nome_ascii": "Centro Fluminense"
+    }
+  }, 
+  {
+    "pk": 81, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Metropolitana do Rio de Janeiro", 
+      "uf": "RJ", 
+      "nome_ascii": "Metropolitana do Rio de Janeiro"
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Noroeste Fluminense", 
+      "uf": "RJ", 
+      "nome_ascii": "Noroeste Fluminense"
+    }
+  }, 
+  {
+    "pk": 83, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Norte Fluminense", 
+      "uf": "RJ", 
+      "nome_ascii": "Norte Fluminense"
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Sul Fluminense", 
+      "uf": "RJ", 
+      "nome_ascii": "Sul Fluminense"
+    }
+  }, 
+  {
+    "pk": 85, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Araraquara", 
+      "uf": "SP", 
+      "nome_ascii": "Araraquara"
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Ara\u00e7atuba", 
+      "uf": "SP", 
+      "nome_ascii": "Aracatuba"
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Assis", 
+      "uf": "SP", 
+      "nome_ascii": "Assis"
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Bauru", 
+      "uf": "SP", 
+      "nome_ascii": "Bauru"
+    }
+  }, 
+  {
+    "pk": 89, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Campinas", 
+      "uf": "SP", 
+      "nome_ascii": "Campinas"
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Itapetininga", 
+      "uf": "SP", 
+      "nome_ascii": "Itapetininga"
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Litoral Sul Paulista", 
+      "uf": "SP", 
+      "nome_ascii": "Litoral Sul Paulista"
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Macro Metropolitana Paulista", 
+      "uf": "SP", 
+      "nome_ascii": "Macro Metropolitana Paulista"
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Mar\u00edlia", 
+      "uf": "SP", 
+      "nome_ascii": "Marilia"
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Metropolitana de S\u00e3o Paulo", 
+      "uf": "SP", 
+      "nome_ascii": "Metropolitana de Sao Paulo"
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Piracicaba", 
+      "uf": "SP", 
+      "nome_ascii": "Piracicaba"
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Presidente Prudente", 
+      "uf": "SP", 
+      "nome_ascii": "Presidente Prudente"
+    }
+  }, 
+  {
+    "pk": 97, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Ribeir\u00e3o Preto", 
+      "uf": "SP", 
+      "nome_ascii": "Ribeirao Preto"
+    }
+  }, 
+  {
+    "pk": 98, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "S\u00e3o Jos\u00e9 do Rio Preto", 
+      "uf": "SP", 
+      "nome_ascii": "Sao Jose do Rio Preto"
+    }
+  }, 
+  {
+    "pk": 99, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "3", 
+      "nome": "Vale do Para\u00edba Paulista", 
+      "uf": "SP", 
+      "nome_ascii": "Vale do Paraiba Paulista"
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Centro Ocidental Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Centro Ocidental Paranaense"
+    }
+  }, 
+  {
+    "pk": 101, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Centro Oriental Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Centro Oriental Paranaense"
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Centro-Sul Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Centro-Sul Paranaense"
+    }
+  }, 
+  {
+    "pk": 103, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Metropolitana de Curitiba", 
+      "uf": "PR", 
+      "nome_ascii": "Metropolitana de Curitiba"
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Noroeste Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Noroeste Paranaense"
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Norte Central Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Norte Central Paranaense"
+    }
+  }, 
+  {
+    "pk": 106, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Norte Pioneiro Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Norte Pioneiro Paranaense"
+    }
+  }, 
+  {
+    "pk": 107, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Oeste Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Oeste Paranaense"
+    }
+  }, 
+  {
+    "pk": 108, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Sudeste Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Sudeste Paranaense"
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Sudoeste Paranaense", 
+      "uf": "PR", 
+      "nome_ascii": "Sudoeste Paranaense"
+    }
+  }, 
+  {
+    "pk": 110, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Centro Ocidental Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Centro Ocidental Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 111, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Centro Oriental Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Centro Oriental Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Metropolitana de Porto Alegre", 
+      "uf": "RS", 
+      "nome_ascii": "Metropolitana de Porto Alegre"
+    }
+  }, 
+  {
+    "pk": 113, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Nordeste Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Nordeste Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 114, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Noroeste Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Noroeste Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 115, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Sudeste Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Sudeste Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 116, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Sudoeste Rio-Grandense", 
+      "uf": "RS", 
+      "nome_ascii": "Sudoeste Rio-Grandense"
+    }
+  }, 
+  {
+    "pk": 117, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Grande Florian\u00f3polis", 
+      "uf": "SC", 
+      "nome_ascii": "Grande Florianopolis"
+    }
+  }, 
+  {
+    "pk": 118, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Norte Catarinense", 
+      "uf": "SC", 
+      "nome_ascii": "Norte Catarinense"
+    }
+  }, 
+  {
+    "pk": 119, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Oeste Catarinense", 
+      "uf": "SC", 
+      "nome_ascii": "Oeste Catarinense"
+    }
+  }, 
+  {
+    "pk": 120, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Serrana", 
+      "uf": "SC", 
+      "nome_ascii": "Serrana"
+    }
+  }, 
+  {
+    "pk": 121, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Sul Catarinense", 
+      "uf": "SC", 
+      "nome_ascii": "Sul Catarinense"
+    }
+  }, 
+  {
+    "pk": 122, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "4", 
+      "nome": "Vale do Itaja\u00ed", 
+      "uf": "SC", 
+      "nome_ascii": "Vale do Itajai"
+    }
+  }, 
+  {
+    "pk": 123, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Distrito Federal", 
+      "uf": "DF", 
+      "nome_ascii": "Distrito Federal"
+    }
+  }, 
+  {
+    "pk": 124, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Centro Goiano", 
+      "uf": "GO", 
+      "nome_ascii": "Centro Goiano"
+    }
+  }, 
+  {
+    "pk": 125, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Leste Goiano", 
+      "uf": "GO", 
+      "nome_ascii": "Leste Goiano"
+    }
+  }, 
+  {
+    "pk": 126, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Noroeste Goiano", 
+      "uf": "GO", 
+      "nome_ascii": "Noroeste Goiano"
+    }
+  }, 
+  {
+    "pk": 127, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Norte Goiano", 
+      "uf": "GO", 
+      "nome_ascii": "Norte Goiano"
+    }
+  }, 
+  {
+    "pk": 128, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Sul Goiano", 
+      "uf": "GO", 
+      "nome_ascii": "Sul Goiano"
+    }
+  }, 
+  {
+    "pk": 129, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Centro Norte de Mato Grosso do Sul", 
+      "uf": "MS", 
+      "nome_ascii": "Centro Norte de Mato Grosso do Sul"
+    }
+  }, 
+  {
+    "pk": 130, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Leste de Mato Grosso do Sul", 
+      "uf": "MS", 
+      "nome_ascii": "Leste de Mato Grosso do Sul"
+    }
+  }, 
+  {
+    "pk": 131, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Pantanais Sul Mato-Grossense", 
+      "uf": "MS", 
+      "nome_ascii": "Pantanais Sul Mato-Grossense"
+    }
+  }, 
+  {
+    "pk": 132, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Sudoeste de Mato Grosso do Sul", 
+      "uf": "MS", 
+      "nome_ascii": "Sudoeste de Mato Grosso do Sul"
+    }
+  }, 
+  {
+    "pk": 133, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Centro-Sul Mato-Grossense", 
+      "uf": "MT", 
+      "nome_ascii": "Centro-Sul Mato-Grossense"
+    }
+  }, 
+  {
+    "pk": 134, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Nordeste Mato-Grossense", 
+      "uf": "MT", 
+      "nome_ascii": "Nordeste Mato-Grossense"
+    }
+  }, 
+  {
+    "pk": 135, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Norte Mato-Grossense", 
+      "uf": "MT", 
+      "nome_ascii": "Norte Mato-Grossense"
+    }
+  }, 
+  {
+    "pk": 136, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Sudeste Mato-Grossense", 
+      "uf": "MT", 
+      "nome_ascii": "Sudeste Mato-Grossense"
+    }
+  }, 
+  {
+    "pk": 137, 
+    "model": "municipios.mesoregiao", 
+    "fields": {
+      "regiao": "5", 
+      "nome": "Sudoeste Mato-Grossense", 
+      "uf": "MT", 
+      "nome_ascii": "Sudoeste Mato-Grossense"
+    }
+  }
+]
