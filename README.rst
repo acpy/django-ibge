@@ -57,7 +57,6 @@ ftp://geoftp.ibge.gov.br/organizacao_territorial/localidades/descritivo_campos_l
 Análise dos dados
 =================
 
-
 ========== =============== =============== ==== ==== ===== ==================================================================
 nome campo       valor min       valor max zero null blank [curto] mais_longo
 ========== =============== =============== ==== ==== ===== ==================================================================
@@ -85,6 +84,81 @@ alt                    0.0     1639.154504  0    N     -   [-]
 gmrotation             0.0             0.0  0    -     -   [-]
 ========== =============== =============== ==== ==== ===== ==================================================================
 
+========
+API REST
+========
+
+Um teste com a biblioteca Tastypie gerou as seguintes URLs para acesso REST
+ao model cidades.models.MesoRegiao::
+
+    ^muni/ ^api/ ^(?P<resource_name>mesoregiao)/$ [name='api_dispatch_list']
+    ^muni/ ^api/ ^(?P<resource_name>mesoregiao)/schema/$ [name='api_get_schema']
+    ^muni/ ^api/ ^(?P<resource_name>mesoregiao)/set/(?P<pk_list>\w[\w/;-]*)/$ [name='api_get_multiple']
+    ^muni/ ^api/ ^(?P<resource_name>mesoregiao)/(?P<pk>\w[\w/-]*)/$ [name='api_dispatch_detail']
+
+Acessando a primeira URL com parâmetros::
+
+  http://localhost:8000/muni/api/mesoregiao/?limit=3&format=json
+
+Resultado::
+
+    {"meta": {"limit": 3, "next": "/muni/api/mesoregiao/?offset=3&limit=3&format=json", 
+              "offset": 0, "previous": null, "total_count": 137}, 
+     "objects": [
+       {"id": "21", "nome": "Agreste Alagoano", "nome_ascii": "Agreste Alagoano", 
+        "regiao": 2, "resource_uri": "/muni/api/mesoregiao/21/", "uf": "AL"},
+       {"id": "43", "nome": "Agreste Paraibano", "nome_ascii": "Agreste Paraibano", 
+        "regiao": 2, "resource_uri": "/muni/api/mesoregiao/43/", "uf": "PB"}, 
+       {"id": "47", "nome": "Agreste Pernambucano", "nome_ascii": "Agreste Pernambucano", 
+        "regiao": 2, "resource_uri": "/muni/api/mesoregiao/47/", "uf": "PE"}
+    ]}
+    
+URL de detalhe::
+
+  http://localhost:8000/muni/api/mesoregiao/11/?format=json
+  
+Resultado::
+
+  {"id": "11", "nome": "Metropolitana de Bel\u00e9m", "nome_ascii": "Metropolitana de Belem", 
+  "regiao": 1, "resource_uri": "/muni/api/mesoregiao/11/", "uf": "PA"}
 
 
+URL de conjunto::
+
+  http://localhost:8000/muni/api/mesoregiao/set/11;15/?format=json
+
+Resultado::
+
+    {"objects": [
+      {"id": "11", "nome": "Metropolitana de Bel\u00e9m", "nome_ascii": "Metropolitana de Belem", 
+       "regiao": 1, "resource_uri": "/muni/api/mesoregiao/11/", "uf": "PA"}, 
+      {"id": "15", "nome": "Leste Rondoniense", "nome_ascii": "Leste Rondoniense", 
+       "regiao": 1, "resource_uri": "/muni/api/mesoregiao/15/", "uf": "RO"}
+    ]}
+
+URL do esquema da API e dados::
+
+http://localhost:8000/muni/api/mesoregiao/schema/?format=json
+
+Resultado::
+
+    {"allowed_detail_http_methods": ["get", "post", "put", "delete", "patch"], 
+     "allowed_list_http_methods": ["get", "post", "put", "delete", "patch"], 
+     "default_format": "application/json", 
+     "default_limit": 20, 
+     "fields": {
+       "id": {"blank": false, "default": "", "help_text": "Unicode string...", 
+              "nullable": false, "readonly": false, "type": "string", "unique": true}, 
+       "nome": {"blank": false, "default": "No default provided.", "help_text": "Uni..", 
+              "nullable": false, "readonly": false, "type": "string", "unique": false},
+       "nome_ascii": {"blank": false, "default": "No default provided.", "help_text": "Uni...", 
+              "nullable": false, "readonly": false, "type": "string", "unique": false}, 
+       "regiao": {"blank": false, "default": "No default provided.", 
+              "help_text": "Integer data. Ex: 2673", "nullable": false, "readonly": false, "type": "integer", "unique": false}, 
+       "resource_uri": {"blank": false, "default": "No default provided.", "help_text": "Uni...", 
+              "nullable": false, "readonly": true, "type": "string", "unique": false}, 
+       "uf": {"blank": false, "default": "No default provided.", "help_text": "Uni..", 
+             "nullable": false, "readonly": false, "type": "string", "unique": false}
+     }
+    }
 
