@@ -17,9 +17,13 @@ UFS = dict([(sigla, nome) for sigla, nome in br_states.STATE_CHOICES])
 class Municipio(models.Model):
     uf = models.CharField(max_length=2, db_index=True,
                           choices=br_states.STATE_CHOICES)
-    nome = models.CharField(max_length=62, db_index=True)
-    nome_ascii = models.CharField(max_length=62, db_index=True)
+    nome = models.CharField(max_length=64, db_index=True)
+    nome_ascii = models.CharField(max_length=64, db_index=True)
     meso_regiao = models.ForeignKey('MesoRegiao')
+    #capital = models.BooleanField(default=False)
+    #latitude = models.FloatField(null=True)
+    #longitude = models.FloatField(null=True)
+    #geohash = models.CharField(max_length=16, blank=True, default='')
 
     class Meta:
         verbose_name = u'Município'

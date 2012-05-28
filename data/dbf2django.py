@@ -35,14 +35,13 @@ for i, loc in enumerate(entrada):
     else:
         registro = dict(model='localidades.localidade')
         campos = {}
-        vi_none = False
         for nome, tipo, valor in zip(nomes, tipos, loc):
             if valor is None:
                 vi_none = True
             if nome == 'id':
                 registro['pk'] = valor
                 continue
-            if nome == 'gmrotation': 
+            if nome == 'gmrotation':
                 continue # ignorar este campo
             if tipo[0] == 'C':
                 texto = valor.decode('cp1252')
@@ -53,9 +52,6 @@ for i, loc in enumerate(entrada):
                 # dump JSON do Django representa numeros como strings
                 campos[nome] = str(valor)
         registro['fields'] = campos
-        if vi_none:
-            print loc
-            print dumps(registro, indent=2)
         localidades.append(registro)
 
 with open('localidades.json','w') as arq_fixture:

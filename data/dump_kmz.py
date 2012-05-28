@@ -1,9 +1,10 @@
 # coding: utf-8
 import zipfile
-
-from xml.etree import ElementTree
-
 import re
+from xml.etree import ElementTree
+import json
+
+import Geohash
 
 ARQ = 'cidades_do_brasil_2008.kmz'
 
@@ -48,10 +49,12 @@ def extrair_coords(ns, elem):
         raise ValueError('coordenadas mal formadas: %r' % coords)
     return lat, long
 
+export = {}
 with zipfile.ZipFile(ARQ) as kmz:
     doc = kmz.open('doc.kml')
     raiz = None
     qt_lidos = 0
+    capital = True
     for event, elem in ElementTree.iterparse(doc):
         ns = elem.tag[:elem.tag.find('}')+1]
         if elem.tag == ns+'Placemark':
@@ -59,19 +62,16 @@ with zipfile.ZipFile(ARQ) as kmz:
             codmun = extrair_codmun(ns, elem)
             lat, long = extrair_coords(ns, elem)
             qt_lidos += 1
-            print qt_lidos, uf, codmun, lat, long, nome
+            g_hash = Geohash.encode(lat, long)
+            export[codmun] = (uf, int(capital), g_hash, lat, long, nome)
             #break
+        elif elem.tag == ns+'Folder':
+            nome_folder = elem.findtext(ns+'name')
+            assert capital == (nome_folder==u'Capitais'), 'folder e flag nao batem'
+            if capital and nome_folder==u'Capitais':
+                capital = False
 
+with open('coords.json','wb') as saida:
+    json.dump(export, saida, indent=2)
 
-'''
-  context = iterparse(source, events=("start", "end"))
-  root = None
-
-  for event, elem in context:
-      if event == "start" and root is None:
-          root = elem     # the first element is root
-      if event == "end" and elem.tag == "record":
-          ... process record elements ...
-          root.clear()
-
-'''
+print qt_lidos, 'tuplas salvas'

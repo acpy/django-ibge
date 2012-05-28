@@ -166,3 +166,16 @@ Resultado::
      }
     }
 
+=============
+Geohash
+=============
+
+Experimentei as bibliotecas `python-geohash`_ , bem documentada
+e empacotada, e a `Geohash 1.0rc1`_, referenciada pela primeira.
+
+.. _python-geohash: http://code.google.com/p/python-geohash/
+
+.. _Geohash 1.0rc1: http://pypi.python.org/pypi/Geohash/
+
+Fiquei com a Geohash, por ser escrita em Python puro, facilitando a
+instalação em hosts compartilhados e na nuvem.
