@@ -1,11 +1,12 @@
 import json
 
-from .models import Municipio, MesoRegiao, REGIOES
+from .models import Municipio, MesoRegiao, REGIOES, UFS
 
 from django import http
 from django.views.generic.list import BaseListView
 
 from django.forms.models import model_to_dict
+from django.contrib.localflavor.br import br_states
 
 class JSONResponseMixin(object):
     ''' Classe `mixin` baseada no exemplo em:
@@ -31,6 +32,10 @@ class JSONResponseMixin(object):
 
 class RegiaoListView(JSONResponseMixin, BaseListView):
     queryset = [dict(id=id, nome=nome) for id, nome in REGIOES]
+
+class UFListView(JSONResponseMixin, BaseListView):
+    queryset = [dict(id=sigla, nome=nome)
+                for sigla, nome in br_states.STATE_CHOICES]
 
 class MesoRegiaoListView(JSONResponseMixin, BaseListView):
     queryset = [model_to_dict(mr)
