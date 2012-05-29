@@ -20,10 +20,10 @@ class Municipio(models.Model):
     nome = models.CharField(max_length=64, db_index=True)
     nome_ascii = models.CharField(max_length=64, db_index=True)
     meso_regiao = models.ForeignKey('MesoRegiao')
-    #capital = models.BooleanField(default=False)
-    #latitude = models.FloatField(null=True)
-    #longitude = models.FloatField(null=True)
-    #geohash = models.CharField(max_length=16, blank=True, default='')
+    capital = models.BooleanField(default=False)
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
+    geohash = models.CharField(max_length=16, blank=True, default='')
 
     class Meta:
         verbose_name = u'Município'

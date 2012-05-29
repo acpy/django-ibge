@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Municípios</title>
+<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+</head>
+<body>
+
+<h1>Municípios</h1>
+
+<table>
+  <tr><th>Regiões</th></tr>
+  <tr><td>
+    <select id="selection" size="{{reg_altura|default:5}}">
+      {% for regiao in object_list %}
+         <option value="{{regiao.id}}">{{regiao.nome}}</option>
+      {% endfor %}
+    </select>
+  </td></tr>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   // do jQuery
+});
+</script>
