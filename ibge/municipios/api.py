@@ -1,6 +1,6 @@
 import json
 
-from .models import Municipio, MesoRegiao, REGIOES, UFS
+from .models import Municipio, MesoRegiao, REGIOES, UFS, REGIOES_UFS
 
 from django import http
 from django.views.generic.list import BaseListView
@@ -34,8 +34,14 @@ class RegiaoListView(JSONResponseMixin, BaseListView):
     queryset = [dict(id=id, nome=nome) for id, nome in REGIOES]
 
 class UFListView(JSONResponseMixin, BaseListView):
-    queryset = [dict(id=sigla, nome=nome)
-                for sigla, nome in br_states.STATE_CHOICES]
+    def get_queryset(self):
+        queryset = [dict(id=sigla, nome=nome)
+                     for sigla, nome in br_states.STATE_CHOICES]
+        if len(self.args) > 0:
+            cod_reg = int(self.args[0])
+            ufs_regiao = [uf for regiao, uf in REGIOES_UFS if regiao==cod_reg]
+            queryset = [dic for dic in queryset if dic['id'] in ufs_regiao]        
+        return queryset
 
 class MesoRegiaoListView(JSONResponseMixin, BaseListView):
     queryset = [model_to_dict(mr)
@@ -44,3 +50,6 @@ class MesoRegiaoListView(JSONResponseMixin, BaseListView):
 class MunicipioListView(JSONResponseMixin, BaseListView):
     queryset = [model_to_dict(mr)
                 for mr in Municipio.objects.all()]
+                
+                
+                

@@ -14,6 +14,36 @@ REGIOES = [
     (5, u'Centro-Oeste'),
 ]
 
+REGIOES_UFS = [
+    (1, u'AC'),
+    (1, u'AM'),
+    (1, u'AP'),
+    (1, u'PA'),
+    (1, u'RO'),
+    (1, u'RR'),
+    (1, u'TO'),
+    (2, u'AL'),
+    (2, u'BA'),
+    (2, u'CE'),
+    (2, u'MA'),
+    (2, u'PB'),
+    (2, u'PE'),
+    (2, u'PI'),
+    (2, u'RN'),
+    (2, u'SE'),
+    (3, u'ES'),
+    (3, u'MG'),
+    (3, u'RJ'),
+    (3, u'SP'),
+    (4, u'PR'),
+    (4, u'RS'),
+    (4, u'SC'),
+    (5, u'DF'),
+    (5, u'GO'),
+    (5, u'MS'),
+    (5, u'MT')
+]
+
 class Municipio(models.Model):
     uf = models.CharField(max_length=2, db_index=True,
                           choices=br_states.STATE_CHOICES)

@@ -10,19 +10,50 @@
 
 <h1>Municípios</h1>
 
+<p>Seleção: <span id="selecao">(nenhuma)</span></p>
+
 <table>
-  <tr><th>Regiões</th></tr>
-  <tr><td>
-    <select id="selection" size="{{reg_altura|default:5}}">
-      {% for regiao in object_list %}
-         <option value="{{regiao.id}}">{{regiao.nome}}</option>
-      {% endfor %}
-    </select>
-  </td></tr>
+  <tr><th>Regiões</th><th>Unidades da Federação</th></tr>
+  <tr>
+    <td>
+      <select id="regiao" size="{{reg_altura|default:5}}">
+        {% for regiao in object_list %}
+          <option value="{{regiao.id}}">{{regiao.nome}}</option>
+        {% endfor %}
+      </select>
+    </td>
+    <td>
+      <select id="uf" size="10">
+      </select>
+    </td>
+ </tr>
 </table>
 
 <script type="text/javascript">
-$(document).ready(function(){
-   // do jQuery
-});
+(function($) {
+  $(document).ready(function(){
+    $("#regiao").click(function(event){
+      var reg_sel = $(this+"option:selected");
+      $("#selecao").text(reg_sel.text());
+      $("#uf").empty();
+      
+      for (var i=0; i<3; i++) {
+        $('<option>'+reg_sel.text()+'</option>').appendTo($("#uf"));
+      }
+      
+      $.getJSON('ajax/test.json', function(data) {
+        var items = [];
+        $.each(data, function(key, val) {
+          items.push('<li id="' + key + '">' + val + '</li>');
+        });
+        $('<ul/>', {
+          'class': 'my-new-list',
+          html: items.join('')
+        }).appendTo('body');
+       
+      });
+    });
+ });
+})(django.jQuery)
 </script>
+
