@@ -40,16 +40,24 @@ class UFListView(JSONResponseMixin, BaseListView):
         if len(self.args) > 0:
             cod_reg = int(self.args[0])
             ufs_regiao = [uf for regiao, uf in REGIOES_UFS if regiao==cod_reg]
-            queryset = [dic for dic in queryset if dic['id'] in ufs_regiao]        
+            queryset = [dic for dic in queryset if dic['id'] in ufs_regiao]
         return queryset
 
 class MesoRegiaoListView(JSONResponseMixin, BaseListView):
-    queryset = [model_to_dict(mr)
-                for mr in MesoRegiao.objects.all()]
+    def get_queryset(self):
+        queryset = MesoRegiao.objects.all()
+        if len(self.args) > 0:
+            uf = self.args[0]
+            queryset = queryset.filter(uf=uf)
+        return [model_to_dict(mr) for mr in queryset]
 
 class MunicipioListView(JSONResponseMixin, BaseListView):
-    queryset = [model_to_dict(mr)
-                for mr in Municipio.objects.all()]
-                
-                
-                
+    def get_queryset(self):
+        queryset = Municipio.objects.all()
+        if 'meso' in self.kwargs:
+            meso = self.kwargs['meso']
+            queryset = queryset.filter(meso_regiao=meso)
+        return [model_to_dict(mr) for mr in queryset]
+
+
+

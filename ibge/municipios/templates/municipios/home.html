@@ -13,18 +13,28 @@
 <table>
   <tr>
     <th>Regiões</th>
-    <th>Unidades da Federação</th>
+    <th>UF</th>
+    <th>Meso-regiões</th>
+    <th>Municípios</th>
   </tr>
   <tr>
-    <td valign="top">
+    <td valign="top" width="100">
       <select id="regiao" size="10">
         {% for regiao in object_list %}
           <option value="{{regiao.id}}">{{regiao.nome}}</option>
         {% endfor %}
       </select>
     </td>
-    <td valign="top">
+    <td valign="top" width="170">
       <select id="uf" size="10">
+      </select>
+    </td>
+    <td valign="top" width="250">
+      <select id="meso" size="15">
+      </select>
+    </td>
+    <td valign="top">
+      <select id="muni" size="30">
       </select>
     </td>
  </tr>
@@ -32,18 +42,31 @@
 
 <script type="text/javascript">
 (function($) {
+    var preencher = function(url, id) {
+      $.getJSON(url, function(data) {
+          var items = [];
+          $.each(data.object_list, function(key, val) {
+              items.push('<option value="'+val.id+'">'+
+                          val.nome+'</option>');
+          });
+          $(items.join('\n')).appendTo(id);
+      });
+    };
     $(document).ready(function(){
         $("#regiao").click(function(event){
-            var sel = $(this+"option:selected");
-            $("#uf").empty();
-            $.getJSON('/api/uf/'+sel.attr('value')+'/', function(data) {
-                var items = [];
-                $.each(data.object_list, function(key, val) {
-                    items.push('<option value="'+val.id+'">'+
-                                val.nome+'</option>');
-                });
-                $(items.join('\n')).appendTo('#uf');
-            });
+            var sel = $("#regiao option:selected");
+            $("#uf, #meso, #muni").empty();
+            preencher('/api/regiao/'+sel.attr('value')+'/', '#uf');
+        });
+        $("#uf").click(function(event){
+            var sel = $("#uf option:selected");
+            $("#meso, #muni").empty();
+            preencher('/api/uf/'+sel.attr('value')+'/', '#meso');
+        });
+        $("#meso").click(function(event){
+            var sel = $("#meso option:selected");
+            $("#muni").empty();
+            preencher('/api/mesoreg/'+sel.attr('value')+'/', '#muni');
         });
     });
 })(django.jQuery)
