@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import json
 
 from .models import Municipio, MesoRegiao, REGIOES, UFS, REGIOES_UFS
@@ -30,10 +32,13 @@ class JSONResponseMixin(object):
         # -- can be serialized as JSON.
         return json.dumps(context)
 
-class RegiaoListView(JSONResponseMixin, BaseListView):
+class JSONView(JSONResponseMixin, BaseListView):
+    """Devolve a instância do model em formato JSON"""
+
+class RegiaoListView(JSONView):
     queryset = [dict(id=id, nome=nome) for id, nome in REGIOES]
 
-class UFListView(JSONResponseMixin, BaseListView):
+class UFListView(JSONView):
     def get_queryset(self):
         queryset = [dict(id=sigla, nome=nome)
                      for sigla, nome in br_states.STATE_CHOICES]
@@ -43,7 +48,7 @@ class UFListView(JSONResponseMixin, BaseListView):
             queryset = [dic for dic in queryset if dic['id'] in ufs_regiao]
         return queryset
 
-class MesoRegiaoListView(JSONResponseMixin, BaseListView):
+class MesoRegiaoListView(JSONView):
     def get_queryset(self):
         queryset = MesoRegiao.objects.all()
         if len(self.args) > 0:
@@ -51,7 +56,7 @@ class MesoRegiaoListView(JSONResponseMixin, BaseListView):
             queryset = queryset.filter(uf=uf)
         return [model_to_dict(mr) for mr in queryset]
 
-class MunicipioListView(JSONResponseMixin, BaseListView):
+class MunicipioListView(JSONView):
     def get_queryset(self):
         queryset = Municipio.objects.all()
         if 'meso' in self.kwargs:
